@@ -8,11 +8,11 @@ const createWindow = () => {
         width: 800,
         height: 600
     })
-    win.loadFile('index.html')
+    win.loadFile('app/index.html')
 }
 
 
 app.whenReady().then(() => {
     createWindow()
-    app.commandLine.appendSwitch('disable-gpu-sandbox')
+    app.commandLine.appendSwitch('in-process-gpu')
 })
