@@ -1,0 +1,31 @@
+{
+  "name": "rutherford-launcher",
+  "version": "1.0.0",
+  "description": "Custom-made (bespoke) Minecraft Launcher built in Electron JS to interact with the CMCL Backend.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iWas-Coder/rutherford-launcher.git"
+  },
+  "keywords": [
+    "minecraft",
+    "launcher",
+    "electron",
+    "cmcl",
+    "modern",
+    "fluent"
+  ],
+  "author": "Wasym A. Alonso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iWas-Coder/rutherford-launcher/issues"
+  },
+  "homepage": "https://github.com/iWas-Coder/rutherford-launcher#readme",
+  "devDependencies": {
+    "electron": "^19.0.9"
+  }
+}
