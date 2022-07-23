@@ -6,23 +6,27 @@
     <meta name="description" content="Custom-made (bespoke) Minecraft Launcher built in Electron JS to interact with the CMCL Backend.">
     <meta name="author" content="iWas">
     <title>Rutherford Launcher</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
 <div class="icon">
-    <object data="svg/icon.svg" width="256" height="256"></object>
+    <object data="../svg/icon.svg" width="256" height="256"></object>
 </div>
 <span class="title">Rutherford Launcher</span>
 
 <div class="main-btn-container">
-    <button class="play-btn">PLAY</button>
+    <!-- Play -->
+    <button class="play-btn" onclick="location.href='play.html'">PLAY</button>
 </div>
 
 <div class="sections-container">
     <!-- Accounts -->
+    <button class="accounts-btn sections" onclick="location.href='accounts.html'">Accounts</button>
     <!-- Versions -->
+    <button class="versions-btn sections" onclick="location.href='versions.html'">Versions</button>
     <!-- Config -->
+    <button class="config-btn sections" onclick="location.href='config.html'">Config</button>
 </div>
 </body>
 

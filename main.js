@@ -24,7 +24,7 @@ const createWindow = () => {
             symbolColor: '#000000'
         }
     })
-    win.loadURL(path.join(__dirname, 'app/index.html'))
+    win.loadURL(path.join(__dirname, 'app/html/index.html'))
 }
 
 

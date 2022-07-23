@@ -74,6 +74,7 @@ button {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    padding-top: 15px;
     
     -webkit-animation: fadein-non-l 3.5s;
     -moz-animation: fadein-non-l 3.5s;
@@ -118,4 +119,77 @@ button {
 .play-btn:hover {
     box-shadow: inset 200px 0 0 0 #5a9a30;
     cursor: pointer;
+}
+
+.sections-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.sections {
+    width: 100px;
+    height: 55px;
+    border: none;
+    color: black;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    border: 3px solid black;
+    position: relative;
+    z-index: 1;
+}
+.sections:hover {
+    color: #f7df1e;
+    cursor: pointer;
+}
+.sections:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: black;
+}
+.sections:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.accounts-btn {
+    float: left;
+
+    -webkit-animation: fadein-non-l 4.5s;
+    -moz-animation: fadein-non-l 4.5s;
+    -ms-animation: fadein-non-l 4.5s;
+    -o-animation: fadein-non-l 4.5s;
+    animation: fadein-non-l 4.5s;
+}
+.versions-btn {
+    -webkit-animation: fadein-non-l 5s;
+    -moz-animation: fadein-non-l 5s;
+    -ms-animation: fadein-non-l 5s;
+    -o-animation: fadein-non-l 5s;
+    animation: fadein-non-l 5s;
+}
+.config-btn {
+    float: right;
+
+    -webkit-animation: fadein-non-l 5.5s;
+    -moz-animation: fadein-non-l 5.5s;
+    -ms-animation: fadein-non-l 5.5s;
+    -o-animation: fadein-non-l 5.5s;
+    animation: fadein-non-l 5.5s;
 }

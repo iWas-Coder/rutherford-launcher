@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+button {
+    -webkit-app-region: no-drag;
+}
+
+.back-btn {
+    color: black;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.output {
+    background-color: gray;
+    opacity: 80%;
+    width: 80%;
+    height: 20vh;
+    border-radius: 10px;
+    margin: 0 auto;
+}
