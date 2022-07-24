@@ -13,3 +13,41 @@ body {
 button {
     -webkit-app-region: no-drag;
 }
+
+.back-btn {
+    width: 75px;
+    height: 35px;
+    border: none;
+    color: black;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    border: 3px solid black;
+    position: relative;
+    z-index: 1;
+}
+.back-btn:hover {
+    color: #f7df1e;
+    cursor: pointer;
+}
+.back-btn:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: black;
+}
+.back-btn:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
