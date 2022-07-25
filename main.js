@@ -17,7 +17,9 @@ const createWindow = () => {
         backgroundColor: '#f7df1e',
         webPreferences: {
             preload: path.join(__dirname, 'app/preload.js'),
-            nodeIntegration: true
+            nodeIntegration: true,
+            nodeIntegrationInWorker: true,
+            contextIsolation: false
         },
         titleBarStyle: 'hidden',
         titleBarOverlay: {

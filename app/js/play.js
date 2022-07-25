@@ -1,10 +1,10 @@
 // @ts-check
 
-const { spawn } = require('child_process')
 
+import { spawn } from 'child_process'
 
 let container = document.getElementById('pre-out')
-/*
+
 const launchMC = () => {
     let cmd = spawn('cmd', ['/c', 'D:\\MINECRAFT\\bin\\script\\funcs\\play.bat'])
     cmd.stdout.on('data', data => {
@@ -17,9 +17,3 @@ const launchMC = () => {
         container.textContent += 'MC process ended with code ' + code.toString()
     })
 }
-*/
-const button = document.getElementById('run-btn')
-
-button.addEventListener('click', () => {
-    container.textContent += 'Test '
-})
