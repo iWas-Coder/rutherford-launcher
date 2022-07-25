@@ -13,6 +13,7 @@ const createWindow = () => {
         minHeight: 480,
         height: 600,
         maxHeight: 720,
+        maximizable: false,
         backgroundColor: '#f7df1e',
         webPreferences: {
             preload: path.join(__dirname, 'app/preload.js'),
@@ -22,7 +23,8 @@ const createWindow = () => {
         titleBarOverlay: {
             color: '#f7df1e',
             symbolColor: '#000000'
-        }
+        },
+        icon: 'D:\\MINECRAFT\\img\\minecraft.ico'
     })
     win.loadURL(path.join(__dirname, 'app/html/index.html'))
 }
