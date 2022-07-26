@@ -170,6 +170,9 @@ button {
     opacity: 1;
     z-index: -1;
 }
+.sections:active {
+    transform: translateY(20px);
+}
 
 .accounts-btn {
     float: left;
