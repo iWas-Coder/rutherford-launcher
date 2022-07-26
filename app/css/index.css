@@ -120,6 +120,9 @@ button {
     box-shadow: inset 200px 0 0 0 #5a9a30;
     cursor: pointer;
 }
+.play-btn:active {
+    transform: translateY(10px);
+}
 
 .sections-container {
     display: flex;
