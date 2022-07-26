@@ -6,29 +6,29 @@
     <meta name="description" content="Custom-made (bespoke) Minecraft Launcher built in Electron JS to interact with the CMCL Backend.">
     <meta name="author" content="iWas">
     <title>Rutherford Launcher</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../index.css">
 
-    <script defer src="../js/index.js"></script>
+    <script defer src="../index.js"></script>
 </head>
 
 <body>
 <div class="icon">
-    <object data="../svg/icon.svg" width="256" height="256"></object>
+    <object data="../icon.svg" width="256" height="256"></object>
 </div>
 <span class="title">Rutherford Launcher</span>
 
 <div class="main-btn-container">
     <!-- Play -->
-    <button class="play-btn" onclick="launchMC()">PLAY</button>
+    <button class="play-btn" onclick="funcMC('play')">PLAY</button>
 </div>
 
 <div class="sections-container">
     <!-- Accounts -->
-    <button class="accounts-btn sections" onclick="location.href='accounts.html'">Accounts</button>
+    <button class="accounts-btn sections" onclick="funcMC('accounts')">Accounts</button>
     <!-- Versions -->
-    <button class="versions-btn sections" onclick="location.href='versions.html'">Versions</button>
+    <button class="versions-btn sections" onclick="funcMC('versions')">Versions</button>
     <!-- Config -->
-    <button class="config-btn sections" onclick="location.href='config.html'">Config</button>
+    <button class="config-btn sections" onclick="funcMC('config')">Config</button>
 </div>
 </body>
 

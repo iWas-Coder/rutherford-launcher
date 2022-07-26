@@ -2,10 +2,11 @@
 
 
 const { shell } = require('electron')
+const path = 'D:\\MINECRAFT\\bin\\script\\funcs\\'
 
-const launchMC = () => {    
+const funcMC = func => {
     shell.beep()
-    shell.openPath('D:\\MINECRAFT\\bin\\script\\funcs\\play.bat')
+    shell.openPath(path + func + '.bat')
         .then(err => {
             console.error(err)
         })

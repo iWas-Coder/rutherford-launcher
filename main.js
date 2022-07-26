@@ -28,7 +28,7 @@ const createWindow = () => {
         },
         icon: 'D:\\MINECRAFT\\img\\minecraft.ico'
     })
-    win.loadURL(path.join(__dirname, 'app/html/index.html'))
+    win.loadURL(path.join(__dirname, 'app/index.html'))
 }
 
 

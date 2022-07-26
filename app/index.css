@@ -121,7 +121,7 @@ button {
     cursor: pointer;
 }
 .play-btn:active {
-    transform: translateY(10px);
+    transform: translateY(20px);
 }
 
 .sections-container {
