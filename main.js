@@ -26,7 +26,7 @@ const createWindow = () => {
             color: '#f7df1e',
             symbolColor: '#000000'
         },
-        icon: 'D:\\MINECRAFT\\img\\minecraft.ico'
+        icon: 'D:\\MINECRAFT\\img\\rutherford.ico'
     })
     win.loadURL(path.join(__dirname, 'app/index.html'))
 }

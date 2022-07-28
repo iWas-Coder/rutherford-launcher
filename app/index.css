@@ -199,3 +199,20 @@ button {
     -o-animation: fadein-non-l 5.5s;
     animation: fadein-non-l 5.5s;
 }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 7px;
+
+    -webkit-animation: fadein-non-l 5.7s;
+    -moz-animation: fadein-non-l 5.7s;
+    -ms-animation: fadein-non-l 5.7s;
+    -o-animation: fadein-non-l 5.7s;
+    animation: fadein-non-l 5.7s;
+}
+.footer-text {
+    font-size: smaller;
+    font-style: italic;
+}
