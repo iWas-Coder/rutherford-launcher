@@ -4,7 +4,7 @@ Custom-made (bespoke) Minecraft Launcher built in Electron JS to interact with t
 
 ![Rutherford Launcher](https://i.imgur.com/n6Ih2a9.png)
 
-### Options:
+## Options:
 - **Play**: (...)
 - **Accounts**: (...)
 - **Versions**: (...)
