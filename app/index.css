@@ -104,7 +104,44 @@ button {
     100% { opacity: 1; }
 }
 
+.loading-spinner.play-btn:after {
+    content: "";
+    position: absolute;
+    width: 36;
+    height: 36px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 5px solid transparent;
+    border-top-color: white;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+}
+.loading-spinner:after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: black;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+}
+@keyframes button-loading-spinner {
+    from { transform: rotate(0turn); }
+    to { transform: rotate(1turn); }
+}
+
+
 .play-btn {
+    position: relative;
     width: 200px;
     height: 75px;
     border: none;
@@ -116,12 +153,15 @@ button {
     font-size: 2rem;
     outline: none;
 }
-.play-btn:hover {
+.play-btn:hover:enabled {
     box-shadow: inset 200px 0 0 0 #5a9a30;
     cursor: pointer;
 }
-.play-btn:active {
+.play-btn:active:enabled {
     transform: translateY(20px);
+}
+.play-btn:disabled {
+    cursor: default;
 }
 
 .sections-container {
@@ -148,11 +188,11 @@ button {
     position: relative;
     z-index: 1;
 }
-.sections:hover {
+.sections:hover:enabled {
     color: #f7df1e;
     cursor: pointer;
 }
-.sections:before {
+.sections:enabled:before {
     transition: 0.5s all ease;
     position: absolute;
     top: 0;
@@ -170,8 +210,11 @@ button {
     opacity: 1;
     z-index: -1;
 }
-.sections:active {
+.sections:active:enabled {
     transform: translateY(20px);
+}
+.sections:disabled {
+    cursor: default;
 }
 
 .accounts-btn {
@@ -214,5 +257,22 @@ button {
 }
 .footer-text {
     font-size: smaller;
+    font-style: italic;
+}
+
+.footer-copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 7px;
+
+    -webkit-animation: fadein-non-l 5.7s;
+    -moz-animation: fadein-non-l 5.7s;
+    -ms-animation: fadein-non-l 5.7s;
+    -o-animation: fadein-non-l 5.7s;
+    animation: fadein-non-l 5.7s;
+}
+.footer-copyright-text {
+    font-size: x-small;
     font-style: italic;
 }
