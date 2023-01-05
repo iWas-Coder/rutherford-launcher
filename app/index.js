@@ -2,7 +2,7 @@
 
 
 const { shell } = require('electron')
-const path = 'D:\\MINECRAFT\\bin\\script\\funcs\\'
+const path = 'scripts'
 
 const funcMC = func => {
     let btn = document.getElementById(func)
